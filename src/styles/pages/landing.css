@@ -1,0 +1,65 @@
+.about {
+    margin-top: 2rem;
+}
+.about p  {
+   display: flex;
+   flex-direction: column;
+}
+
+.about p .news {
+    margin-bottom: .25rem;
+}
+.projects {
+    margin-top: 3rem;
+}
+.projects .title,
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list .item{
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+}
+.list .item:first-child {
+    margin-top: 1rem;
+}
+.list .item::before {
+    content: "";
+    position: absolute;
+    margin-top: 1rem;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 43%;
+    height: 1px;
+    background: linear-gradient(to right, var(--fg) 0%, transparent );
+    opacity: .15;
+}
+.list .item:last-child::before {
+display: none;
+}
+
+.list .item span{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    margin-bottom: .25rem;
+    width: fit-content;
+}
+
+.list .item a {
+   font-size: 17px;
+   font-weight: 500;
+   font-family: var(--font-inter);
+   font-style: italic;
+}
+
+.list .item span img {
+    height: 18.5px;
+    width: 18.5px;
+}

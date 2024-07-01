@@ -1,0 +1,7 @@
+.page404 {
+    margin-top: 2rem;
+}
+.page404 span a {
+    font-family: var(--font-newsreader);
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .branding h1 {
+    cursor: pointer;
+}
+
+.navbar .list ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .list ul li {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.navbar .list ul li a {
+    border: none;
+    color: var(--fg);
+    opacity: .3;
+    font-size: 14px;
+    font-family: var(--font-newsreader);
+    font-style: italic;
+}
+
+.navbar .list ul li a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 336px) {
+   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .navbar .list ul {
+    margin-top: .5rem;
+   }
+   .navbar .list ul li:first-child {
+    margin-left: 0;
+   }
+}

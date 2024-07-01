@@ -1,0 +1,17 @@
+.title {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: fit-content;
+}
+.title:hover {
+    border: none;
+}
+.titleLink {
+    opacity: 0;
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.title:hover > .titleLink {
+    opacity: .7;
+}
